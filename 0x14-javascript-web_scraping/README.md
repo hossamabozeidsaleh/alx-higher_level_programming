@@ -1,47 +1,62 @@
-# Project Title
+# 0x14. Javascript - Web scraping
 
-## Overview
+This project involved practicing file I/O on Node.js and using the NPM request
+framework to interact with the [Star Wars](https://swapi.co/),
+[JSONplaceholder](https://jsonplaceholder.typicode.com), and
+[Twitter](https://developer.twitter.com/en/docs/api-reference-index) API's.
 
-This project demonstrates the amazing aspects of JavaScript programming, focusing on key functionalities:
+## Tasks :page_with_curl:
 
-1. Manipulating JSON data
-2. Using the Request and Fetch API
-3. Reading and writing files using the `fs` module
+* **0. Readme**
+  * [0-readme.js](./0-readme.js): JavaScript script that reads and prints the
+  contents of a file.
+  * Usage: `./0-readme.js <file path>`.
 
-## Table of Contents
+* **1. Write me**
+  * [1-writeme.js](./1-writeme.js): JavaScript script that writes a string to a
+  file.
+  * Usage: `./1-writeme.js <file path> <string to write>`.
 
-- [JavaScript Programming](#javascript-programming)
-- [Manipulating JSON Data](#manipulating-json-data)
-- [Request and Fetch API](#request-and-fetch-api)
-- [Read and Write Files with `fs` Module](#read-and-write-files-with-fs-module)
+* **2. Status code**
+  * [2-statuscode.js](./2-statuscode.js): JavaScript script that displays the
+  stauts code of a `GET` request using the `request` framework.
+  * Usage: `./2-statuscode.js <URL to GET>`.
+  * Output: `code: <status code>`.
 
-## JavaScript Programming
+* **3. Star wars movie title**
+  * [3-starwars_title.js](./3-starwars_title.js): JavaScript script that uses the
+  Star Wars API to print the title of the Star Wars movie with a given integer episode
+  number.
+  * Usage: `./3-starwars_title.js <3-starwars_title.js>`.
 
-JavaScript is an amazing programming language known for its versatility and dynamic nature. This project showcases the power of JavaScript in various aspects.
+* **4. Star wars Wedge Antilles**
+  * [4-starwars_count.js](./4-starwars_count.js): JavaScript script that uses the
+  Star Wars API to print the number of movies featuring the character "Wedge Antilles".
+  * Usage: `./4-starwars_count.js http://swapi.co/api/films/`.
 
-## Manipulating JSON Data
+* **5. Loripsum**
+  * [5-request_store.js](./5-request_store.js): JavaScript script that stores the
+  contents of a webpage in a file.
+  * Usage: `./5-request_store.js <URL to get> <file path to store content in>`.
 
-Learn how to manipulate JSON data efficiently within your JavaScript applications.
+* **6. How many completed?**
+  * [6-completed_tasks.js](./6-completed_tasks.js): JavaScript script that uses the
+  JSONPlaceholder API to compute the number of tasks completed per user ID.
+  * Usage: `./6-completed_tasks.js https://jsonplaceholder.typicode.com/todos`.
 
-## Request and Fetch API
+* **7. Who was playing in this movie?**
+  * [100-starwars_characters.js](./100-starwars_characters.js): JavaScript script
+  that uses the Star Wars API to print all characters featured in a given movie.
+  * Usage: `./100-starwars_characters.js <movie ID>`.
 
-Explore the capabilities of the Request and Fetch API for making HTTP requests and handling responses seamlessly.
+* **8. Right order**
+  * [101-starwars_characters.js](./101-starwars_characters.js): JavaScript script
+  that uses the Star Wars API to print all characters featured in a given movie in
+  the same order as they are listed in the `characters` list of the `/films/` response.
+  * Usage: `./101-starwars_characters.js <movie ID>`.
 
-## Read and Write Files with `fs` Module
-
-Discover how to read and write files using the `fs` module, an essential part of Node.js for file system operations.
-
-## Getting Started
-
-Follow the steps below to get started with this project:
-
-1. Clone the repository: `git clone https://github.com/your-username/your-repository.git`
-2. Install dependencies: `npm install`
-3. Run the project: `npm start`
-
-Feel free to explore the provided code examples and customize them according to your needs.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
+* **9. Twitter Auth**
+  * [102-search_twitter.js](./102-search_twitter.js): JavaScript script that sends
+  a search request to the Twitter API with a given search string.
+  * Usage: `./102-search_twitter.js <consumer  key> <consumer secret> <search string>.
+  * Outputs 5 results in the format `[<Tweet ID>] <Tweet text> by <Tweet owner name>`.
